@@ -1,0 +1,1780 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0812.0353                               -->
+<workbook original-version='18.1' source-build='2022.2.1 (20222.22.0812.0353)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='UDisc-Scorecards+' inline='true' name='federated.0yhp39g18ndhph19l86je0kq7o5z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='UDisc-Scorecards' name='textscan.1xi6g4y0v54m171eqyxqe1oezgx3'>
+            <connection class='textscan' directory='C:/Users/jamor/Desktop/NSS_DA07/Projects/tableau-workshop-jamorgan8/data' filename='UDisc-Scorecards.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1xi6g4y0v54m171eqyxqe1oezgx3' name='UDisc-Scorecards.csv' table='[UDisc-Scorecards#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='PlayerName' ordinal='0' />
+            <column datatype='string' name='CourseName' ordinal='1' />
+            <column datatype='string' name='LayoutName' ordinal='2' />
+            <column datatype='datetime' name='Date' ordinal='3' />
+            <column datatype='integer' name='Total' ordinal='4' />
+            <column datatype='integer' name='+/-' ordinal='5' />
+            <column datatype='integer' name='Hole1' ordinal='6' />
+            <column datatype='integer' name='Hole2' ordinal='7' />
+            <column datatype='integer' name='Hole3' ordinal='8' />
+            <column datatype='integer' name='Hole4' ordinal='9' />
+            <column datatype='integer' name='Hole5' ordinal='10' />
+            <column datatype='integer' name='Hole6' ordinal='11' />
+            <column datatype='integer' name='Hole7' ordinal='12' />
+            <column datatype='integer' name='Hole8' ordinal='13' />
+            <column datatype='integer' name='Hole9' ordinal='14' />
+            <column datatype='integer' name='Hole10' ordinal='15' />
+            <column datatype='integer' name='Hole11' ordinal='16' />
+            <column datatype='integer' name='Hole12' ordinal='17' />
+            <column datatype='integer' name='Hole13' ordinal='18' />
+            <column datatype='integer' name='Hole14' ordinal='19' />
+            <column datatype='integer' name='Hole15' ordinal='20' />
+            <column datatype='integer' name='Hole16' ordinal='21' />
+            <column datatype='integer' name='Hole17' ordinal='22' />
+            <column datatype='integer' name='Hole18' ordinal='23' />
+            <column datatype='integer' name='Hole19' ordinal='24' />
+            <column datatype='integer' name='Hole20' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1xi6g4y0v54m171eqyxqe1oezgx3' name='UDisc-Scorecards.csv' table='[UDisc-Scorecards#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='PlayerName' ordinal='0' />
+              <column datatype='string' name='CourseName' ordinal='1' />
+              <column datatype='string' name='LayoutName' ordinal='2' />
+              <column datatype='datetime' name='Date' ordinal='3' />
+              <column datatype='integer' name='Total' ordinal='4' />
+              <column datatype='integer' name='+/-' ordinal='5' />
+              <column datatype='integer' name='Hole1' ordinal='6' />
+              <column datatype='integer' name='Hole2' ordinal='7' />
+              <column datatype='integer' name='Hole3' ordinal='8' />
+              <column datatype='integer' name='Hole4' ordinal='9' />
+              <column datatype='integer' name='Hole5' ordinal='10' />
+              <column datatype='integer' name='Hole6' ordinal='11' />
+              <column datatype='integer' name='Hole7' ordinal='12' />
+              <column datatype='integer' name='Hole8' ordinal='13' />
+              <column datatype='integer' name='Hole9' ordinal='14' />
+              <column datatype='integer' name='Hole10' ordinal='15' />
+              <column datatype='integer' name='Hole11' ordinal='16' />
+              <column datatype='integer' name='Hole12' ordinal='17' />
+              <column datatype='integer' name='Hole13' ordinal='18' />
+              <column datatype='integer' name='Hole14' ordinal='19' />
+              <column datatype='integer' name='Hole15' ordinal='20' />
+              <column datatype='integer' name='Hole16' ordinal='21' />
+              <column datatype='integer' name='Hole17' ordinal='22' />
+              <column datatype='integer' name='Hole18' ordinal='23' />
+              <column datatype='integer' name='Hole19' ordinal='24' />
+              <column datatype='integer' name='Hole20' ordinal='25' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1xi6g4y0v54m171eqyxqe1oezgx3' name='addresses.csv' table='[addresses#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Course' ordinal='0' />
+              <column datatype='string' name='Address' ordinal='1' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[addresses.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PlayerName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PlayerName]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>PlayerName</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CourseName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CourseName]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>CourseName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LayoutName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LayoutName]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>LayoutName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Total</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>+/-</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[+/-]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>+/-</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole1]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole1</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole2]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole2</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole3]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole3</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole4]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole4</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole5]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole5</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole6]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole6</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole7]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole7</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole8]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole8</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole9</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole9]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole9</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole10</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole10]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole10</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole11</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole11]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole11</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole12</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole12]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole12</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole13</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole13]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole13</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole14</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole14]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole14</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole15]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole15</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole16</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole16]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole16</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole17</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole17]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole17</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole18</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole18]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole18</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole19</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole19]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole19</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hole20</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hole20]</local-name>
+            <parent-name>[UDisc-Scorecards.csv]</parent-name>
+            <remote-alias>Hole20</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Course</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Course]</local-name>
+            <parent-name>[addresses.csv]</parent-name>
+            <remote-alias>Course</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[addresses.csv_F8408434EA104F62AD751FE714F3BB54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Address]</local-name>
+            <parent-name>[addresses.csv]</parent-name>
+            <remote-alias>Address</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[addresses.csv_F8408434EA104F62AD751FE714F3BB54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Rounds Played' datatype='integer' name='[Calculation_1474928887584710657]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF[PlayerName]=&quot;Jake&quot; THEN [PlayerName] END)' />
+      </column>
+      <column caption='Course Name' datatype='string' name='[CourseName]' role='dimension' type='nominal' />
+      <column caption='Layout Name' datatype='string' name='[LayoutName]' role='dimension' type='nominal' />
+      <column caption='Player Name' datatype='string' name='[PlayerName]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='UDisc-Scorecards.csv' datatype='table' name='[__tableau_internal_object_id__].[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='addresses.csv' datatype='table' name='[__tableau_internal_object_id__].[addresses.csv_F8408434EA104F62AD751FE714F3BB54]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/jamor/Documents/My Tableau Repository/Datasources/UDisc-Scorecards+.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/16/2022 02:21:53 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C' table='[Extract].[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C' table='[Extract].[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]' type='table' />
+            <relation name='addresses.csv_F8408434EA104F62AD751FE714F3BB54' table='[Extract].[addresses.csv_F8408434EA104F62AD751FE714F3BB54]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <refresh>
+            <refresh-event add-from-file-path='UDisc-Scorecards+' increment-value='%null%' refresh-type='create' rows-inserted='424' timestamp-start='2022-09-16 02:21:51.912' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>PlayerName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PlayerName]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>PlayerName</remote-alias>
+              <ordinal>0</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CourseName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CourseName]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>CourseName</remote-alias>
+              <ordinal>1</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LayoutName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LayoutName]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>LayoutName</remote-alias>
+              <ordinal>2</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Total</remote-alias>
+              <ordinal>4</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>+/-</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[+/-]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>+/-</remote-alias>
+              <ordinal>5</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole1]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole1</remote-alias>
+              <ordinal>6</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole2]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole2</remote-alias>
+              <ordinal>7</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole3</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole3]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole3</remote-alias>
+              <ordinal>8</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole4</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole4]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole4</remote-alias>
+              <ordinal>9</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole5</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole5]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole5</remote-alias>
+              <ordinal>10</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole6</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole6]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole6</remote-alias>
+              <ordinal>11</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole7</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole7]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole7</remote-alias>
+              <ordinal>12</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole8</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole8]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole8</remote-alias>
+              <ordinal>13</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole9</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole9]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole9</remote-alias>
+              <ordinal>14</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole10</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole10]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole10</remote-alias>
+              <ordinal>15</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole11</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole11]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole11</remote-alias>
+              <ordinal>16</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole12</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole12]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole12</remote-alias>
+              <ordinal>17</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole13</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole13]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole13</remote-alias>
+              <ordinal>18</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole14</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole14]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole14</remote-alias>
+              <ordinal>19</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole15</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole15]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole15</remote-alias>
+              <ordinal>20</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole16</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole16]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole16</remote-alias>
+              <ordinal>21</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole17</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole17]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole17</remote-alias>
+              <ordinal>22</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole18</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole18]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole18</remote-alias>
+              <ordinal>23</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole19</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole19]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole19</remote-alias>
+              <ordinal>24</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hole20</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hole20]</local-name>
+              <parent-name>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</parent-name>
+              <remote-alias>Hole20</remote-alias>
+              <ordinal>25</ordinal>
+              <family>UDisc-Scorecards.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Course</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Course]</local-name>
+              <parent-name>[addresses.csv_F8408434EA104F62AD751FE714F3BB54]</parent-name>
+              <remote-alias>Course</remote-alias>
+              <ordinal>26</ordinal>
+              <family>addresses.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[addresses.csv_F8408434EA104F62AD751FE714F3BB54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Address]</local-name>
+              <parent-name>[addresses.csv_F8408434EA104F62AD751FE714F3BB54]</parent-name>
+              <remote-alias>Address</remote-alias>
+              <ordinal>27</ordinal>
+              <family>addresses.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[addresses.csv_F8408434EA104F62AD751FE714F3BB54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='PlayerName' />
+        <field-sort-custom-order field='Calculation_1474928887584710657' />
+        <field-sort-custom-order field='CourseName' />
+        <field-sort-custom-order field='LayoutName' />
+        <field-sort-custom-order field='Date' />
+        <field-sort-custom-order field='Total' />
+        <field-sort-custom-order field='+/-' />
+        <field-sort-custom-order field='Hole1' />
+        <field-sort-custom-order field='Hole2' />
+        <field-sort-custom-order field='Hole3' />
+        <field-sort-custom-order field='Hole4' />
+        <field-sort-custom-order field='Hole5' />
+        <field-sort-custom-order field='Hole6' />
+        <field-sort-custom-order field='Hole7' />
+        <field-sort-custom-order field='Hole8' />
+        <field-sort-custom-order field='Hole9' />
+        <field-sort-custom-order field='Hole10' />
+        <field-sort-custom-order field='Hole11' />
+        <field-sort-custom-order field='Hole12' />
+        <field-sort-custom-order field='Hole13' />
+        <field-sort-custom-order field='Hole14' />
+        <field-sort-custom-order field='Hole15' />
+        <field-sort-custom-order field='Hole16' />
+        <field-sort-custom-order field='Hole17' />
+        <field-sort-custom-order field='Hole18' />
+        <field-sort-custom-order field='Hole19' />
+        <field-sort-custom-order field='Hole20' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='UDisc-Scorecards.csv' id='UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C'>
+            <properties context=''>
+              <relation connection='textscan.1xi6g4y0v54m171eqyxqe1oezgx3' name='UDisc-Scorecards.csv' table='[UDisc-Scorecards#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='PlayerName' ordinal='0' />
+                  <column datatype='string' name='CourseName' ordinal='1' />
+                  <column datatype='string' name='LayoutName' ordinal='2' />
+                  <column datatype='datetime' name='Date' ordinal='3' />
+                  <column datatype='integer' name='Total' ordinal='4' />
+                  <column datatype='integer' name='+/-' ordinal='5' />
+                  <column datatype='integer' name='Hole1' ordinal='6' />
+                  <column datatype='integer' name='Hole2' ordinal='7' />
+                  <column datatype='integer' name='Hole3' ordinal='8' />
+                  <column datatype='integer' name='Hole4' ordinal='9' />
+                  <column datatype='integer' name='Hole5' ordinal='10' />
+                  <column datatype='integer' name='Hole6' ordinal='11' />
+                  <column datatype='integer' name='Hole7' ordinal='12' />
+                  <column datatype='integer' name='Hole8' ordinal='13' />
+                  <column datatype='integer' name='Hole9' ordinal='14' />
+                  <column datatype='integer' name='Hole10' ordinal='15' />
+                  <column datatype='integer' name='Hole11' ordinal='16' />
+                  <column datatype='integer' name='Hole12' ordinal='17' />
+                  <column datatype='integer' name='Hole13' ordinal='18' />
+                  <column datatype='integer' name='Hole14' ordinal='19' />
+                  <column datatype='integer' name='Hole15' ordinal='20' />
+                  <column datatype='integer' name='Hole16' ordinal='21' />
+                  <column datatype='integer' name='Hole17' ordinal='22' />
+                  <column datatype='integer' name='Hole18' ordinal='23' />
+                  <column datatype='integer' name='Hole19' ordinal='24' />
+                  <column datatype='integer' name='Hole20' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C' table='[Extract].[UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C]' type='table' />
+            </properties>
+          </object>
+          <object caption='addresses.csv' id='addresses.csv_F8408434EA104F62AD751FE714F3BB54'>
+            <properties context=''>
+              <relation connection='textscan.1xi6g4y0v54m171eqyxqe1oezgx3' name='addresses.csv' table='[addresses#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Course' ordinal='0' />
+                  <column datatype='string' name='Address' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='addresses.csv_F8408434EA104F62AD751FE714F3BB54' table='[Extract].[addresses.csv_F8408434EA104F62AD751FE714F3BB54]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[CourseName]' />
+              <expression op='[Course]' />
+            </expression>
+            <first-end-point object-id='UDisc-Scorecards.csv_B9F9BB1ED81E4EB689F7E8D60A6F697C' />
+            <second-end-point object-id='addresses.csv_F8408434EA104F62AD751FE714F3BB54' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Rounds by Course'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='UDisc-Scorecards+' name='federated.0yhp39g18ndhph19l86je0kq7o5z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yhp39g18ndhph19l86je0kq7o5z'>
+            <column caption='Total Rounds Played' datatype='integer' name='[Calculation_1474928887584710657]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[PlayerName]=&quot;Jake&quot; THEN [PlayerName] END)' />
+            </column>
+            <column caption='Course Name' datatype='string' name='[CourseName]' role='dimension' type='nominal' />
+            <column caption='Player Name' datatype='string' name='[PlayerName]' role='dimension' type='nominal' />
+            <column-instance column='[CourseName]' derivation='None' name='[none:CourseName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1474928887584710657]' derivation='User' name='[usr:Calculation_1474928887584710657:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0yhp39g18ndhph19l86je0kq7o5z].[none:CourseName:nk]</rows>
+        <cols>[federated.0yhp39g18ndhph19l86je0kq7o5z].[usr:Calculation_1474928887584710657:qk]</cols>
+      </table>
+      <simple-id uuid='{335EE3DD-33C8-4D47-ABBE-6CF2DC53F543}' />
+    </worksheet>
+    <worksheet name='Rounds played'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='UDisc-Scorecards+' name='federated.0yhp39g18ndhph19l86je0kq7o5z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yhp39g18ndhph19l86je0kq7o5z'>
+            <column caption='Total Rounds Played' datatype='integer' name='[Calculation_1474928887584710657]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF[PlayerName]=&quot;Jake&quot; THEN [PlayerName] END)' />
+            </column>
+            <column caption='Player Name' datatype='string' name='[PlayerName]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1474928887584710657]' derivation='User' name='[usr:Calculation_1474928887584710657:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='150' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0yhp39g18ndhph19l86je0kq7o5z].[usr:Calculation_1474928887584710657:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold' fontsize='20'>Total Rounds Played 2021-2022</run>
+                <run>Æ&#10;</run>
+                <run fontsize='18'><![CDATA[<[federated.0yhp39g18ndhph19l86je0kq7o5z].[usr:Calculation_1474928887584710657:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='4.0442090034484863' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A4D18E72-295D-4B83-9479-06BD7227DBCD}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='UDisc-Scorecards+' name='federated.0yhp39g18ndhph19l86je0kq7o5z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yhp39g18ndhph19l86je0kq7o5z'>
+            <column datatype='integer' name='[+/-]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Course]' role='dimension' type='nominal' />
+            <column-instance column='[Course]' derivation='None' name='[none:Course:nk]' pivot='key' type='nominal' />
+            <column-instance column='[+/-]' derivation='Sum' name='[sum:+/-:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yhp39g18ndhph19l86je0kq7o5z].[none:Course:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Course:nk]' />
+              <groupfilter function='member' level='[none:Course:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0yhp39g18ndhph19l86je0kq7o5z].[none:Course:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0yhp39g18ndhph19l86je0kq7o5z].[none:Course:nk]</rows>
+        <cols>[federated.0yhp39g18ndhph19l86je0kq7o5z].[sum:+/-:qk]</cols>
+      </table>
+      <simple-id uuid='{61AADB16-8D31-4BF0-B846-97BA5EE1F95B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Rounds played'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yhp39g18ndhph19l86je0kq7o5z].[none:Address:nk]</field>
+            <field>[federated.0yhp39g18ndhph19l86je0kq7o5z].[none:Course:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0C5D1351-C5F9-4A7C-B35C-BAB1A62FF4A9}' />
+    </window>
+    <window class='worksheet' name='Rounds by Course'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yhp39g18ndhph19l86je0kq7o5z].[none:CourseName:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{429323B2-E2B9-436F-9A01-A79E02294263}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yhp39g18ndhph19l86je0kq7o5z].[none:Course:nk]</field>
+            <field>[federated.0yhp39g18ndhph19l86je0kq7o5z].[none:CourseName:nk]</field>
+            <field>[federated.0yhp39g18ndhph19l86je0kq7o5z].[none:PlayerName:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E1E20A41-B3A3-40CB-A244-423AEC984D2C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Rounds by Course' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='154' name='Rounds played' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAACaCAYAAAD/yUeWAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAANG0lEQVR4nO3af0zU9QPH8VefAQdcHsKC6AolI+eI8WOSsmCS/Jh6uXZZM86ysSKqrbSc
+      MeaP0EXEBotC14aZYTgWeQImihbEpjlawjTEH0EdDBrxoyCoQzjYx+8fjPeX45fgF4Sv79fj
+      Lz53n7v7fO4+z8+P94d7bt68eRNEklLmegGI5hIDIKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkx
+      AJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMg
+      qTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIa
+      AyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEA
+      khoDIKkxgGlqb2+HwWBAaGgoQkNDkZycPNeLdFc5cOCA+G4jIyNRU1Mzq5/nMBNvkpycjLKy
+      smm9RqvVYt++fQgMDJyJRZj32tvbER8fj/b29nGfVxQF3t7eWLlyJeLi4vDII4/c4SWUT3t7
+      +91zBBi55zAYDBNuaPOVqqpoaWlBUVERTCYTMjIyYLPZ5nqx7np3TQB3E1VVcfToUeTm5kJV
+      1blenLvajJwCpaenj3ls5GmRbKc7UxETEyO+N1VV0dHRgZycHJSUlEBVVaiqCrPZjKioKPj5
+      +c3x0t69eASYBxRFwf33349du3bBZDKJxzs7O1FbWzuHS3b3m5EjwExRVRW//PILDh48iKqq
+      KlitViiKAk9PT0RHR+PFF1+El5eXmN9qteLNN9/E5cuX7d5neKRmpMTERCQmJorplpYWlJaW
+      oqKiAs3NzbBarQAAR0dHPPTQQzCZTDAYDHB2dp7FNbanKArCw8NhNpvR398vlnM8vb29MJvN
+      OH78OJqbm6GqKjQaDQICArBx40asXr0aimK/fxt9IT7yKDSsrKxMjGyNPnKPfn1iYiISEhJQ
+      UVGBw4cPo76+HgMDA/D09ITJZEJcXBycnJzGLLuqqmNe4+HhgYiIiFue8qmqikuXLuHgwYO4
+      cuWK+N00Gg0efPBBhIWFwWg0wtfXd8z6j2feBGCz2fDRRx+hsLDQ7ktQVRVtbW3Iz89HcXEx
+      du/ejejo6Cmt3ERqamrw1ltviS9vpIGBATQ0NCAtLQ1nzpxBRkYGdDrdbX/WdDk7O8PBwUEE
+      0NTUNGae2tpaJCUljbnQ7+/vR3V1NaqrqxEeHo69e/di4cKFs7asFy9ehMlkwm+//Wb3eEdH
+      B7Kzs/HXX39h69atdr9Vb28v3n//fZSXl9v9zp2dnfjmm28m/byJthFgaN0tFgssFgsuX76M
+      /fv3Q6vV3nId5sUpkKqqyMzMhNlsnnQP0Nvbi5SUlGkPud6u6upqfPXVV3fks4b19PSIjR8A
+      lixZYvd8XV0d3nnnnVuOcp0/fx7vvvvuuJHPlAsXLozZ+EeqqKjAn3/+KaZVVUVOTg6+++67
+      27q4r6ysRHFx8YwODMyLI8DFixdRWloqpr28vJCcnIyIiAgMDAzg2LFj2L9/P2w2G2w2G778
+      8kuEhYVBp9Phiy++ADA0DHrgwAHx+tzcXLvTpdHc3d2xfv16xMbG4tFHH4VWq8XAwAAqKyuR
+      np4uNrDKykq88MILU9qb/K9sNhtOnTqFwcFBAICDgwP8/f3F84ODg8jJyUFXVxeAoVMmg8GA
+      rVu3ws3NDU1NTdizZ4+4bvj5559RXl6Op59+elaW18vLC0ajEWvWrIGPjw+sViuSkpJw4cIF
+      AEB3dzdaW1vF71BXV4cTJ06I17u6uuLtt9/GU089BY1Gg87OTuzbt89unpHOnTsnvhsvLy+k
+      paUhMDAQiqLAarWivr4eJ0+exB9//DHldZgXAZSWluLGjRsAhs47P/jgA4SEhAAYOrfbtGkT
+      /v33X7GB//rrr6ipqUFERMRtfV5AQAAKCwvHnEY5Ojpi1apVqK2txaFDhwAAbW1tsFqtsxqA
+      qqpobGzExx9/jB9//FE87ufnZzdy1tDQgEuXLonpmJgY7NixQ5xn+/r6Ii0tDa+//jpaWlqg
+      qipOnz6NNWvWQKPRzPhyG41Gu+uqBQsWICQkRAQw2tmzZ9HT0wNgKO6kpCSsX79ePO/h4YEH
+      Hnhgws/r6+ub8DmtVovg4GAEBwdP6wgx5wH09vaisbFRTD/22GN2e71hq1evRkFBAbq7uzE4
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
